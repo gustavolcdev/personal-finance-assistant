@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxiliar de Finanças Pessoais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Auxiliar de Finanças Pessoais</h1>
+        <p>Analise seus gastos e receba insights valiosos.</p>
+
+        <div id="uploadSection">
+             <p>Envie sua planilha de gastos para análise:</p>
+             <form id="uploadForm">
+                <input type="file" name="planilha" accept=".csv, .xls, .xlsx" required>
+                <button type="submit">Analisar Planilha</button>
+            </form>
+        </div>
+
+        <div id="loading">Analisando planilha...</div>
+
+        <div id="reportArea" class="section" style="display: none;">
+            <h2>Relatório de Análise Financeira</h2>
+            <div id="reportContent">
+                </div>
+        </div>
+
+        <div id="chatArea" class="section" style="display: none;">
+            <h2>Converse com a IA sobre seu relatório</h2>
+            <div id="chatBox">
+                <div class="chat-message ia"><strong>IA:</strong> Olá! Como posso ajudar com seu relatório financeiro?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Digite sua pergunta...">
+                <button id="sendChatBtn">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <button style="display: none;" id="newAnalysisBtn" title="Nova Análise">+</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/js/script.js" type="module"></script>
+</body>
+</html>

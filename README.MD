@@ -3,6 +3,8 @@ Auxiliar de Finanças Pessoais 💰📊
 
 Bem-vindo ao projeto Auxiliar de Finanças Pessoais! Este é um aplicativo web que utiliza Inteligência Artificial para analisar seus gastos e fornecer insights valiosos sobre sua saúde financeira.
 
+* **Veja um video da interface e da execução do projeto** [LINK DO VIDEO AQUI](https://www.loom.com/share/c097c0fb1c194cb39bcec7867d642c6f?sid=3b57962a-795e-42e6-9079-89a9c627ff0b)
+
 Sobre o Projeto ✨
 -----------------
 
@@ -74,7 +76,8 @@ Siga os passos abaixo para configurar e rodar o projeto em sua máquina:
 
 1.  git clone cd personal-finance-assistant_(Substitua pela URL real do seu repositório Git)_
     
-2.  npm install
+2.  **É NECESSÁRIO QUE O NODE.JS v22.15.0 esteja instalado** 
+    * npm install
     
 3.  npm install --save-dev jest @jest/globals @types/jest supertest
     

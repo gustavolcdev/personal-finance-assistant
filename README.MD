@@ -34,13 +34,7 @@ Funcionalidades Atuais ✅
 *   Interface web responsiva com design moderno e animações.
     
 *   Botão flutuante para iniciar uma nova análise.
-    
-*   Backend estruturado com princípios de Orientação a Objetos (Controllers, Services).
-    
-*   Utilização de ES Modules (import/export) no backend.
-    
-*   Testes unitários básicos para as camadas do backend.
-    
+
 
 Tecnologias Utilizadas 💻
 -------------------------
@@ -80,7 +74,7 @@ Instalação ⚙️
 
 Siga os passos abaixo para configurar e rodar o projeto em sua máquina:
 
-1.  git clone cd personal-finance-assistant_(Substitua pela URL real do seu repositório Git)_
+1.  git clone https://github.com/gustavolcdev/personal-finance-assistant.git personal-finance-assistant && cd personal-finance-assistant
     
 2.  **É NECESSÁRIO QUE O NODE.JS v22.15.0 esteja instalado** 
     * npm install
@@ -132,7 +126,42 @@ Estrutura do Projeto 📁
 -----------------------
 
 A estrutura de pastas do projeto segue uma organização modular:
-`   .  ├── node_modules/          # Dependências instaladas  ├── public/                # Arquivos estáticos (frontend)  │   ├── css/  │   │   └── style.css      # Estilos CSS  │   ├── js/  │   │   ├── actions/       # Funções de chamada de API  │   │   │   └── api.js  │   │   └── model/         # Lógica de manipulação da UI  │   │       └── UIManager.js  │   │   └── script.js      # Lógica principal do frontend  │   └── index.html         # Página principal da aplicação  ├── src/                   # Código fonte do backend  │   ├── controllers/       # Lógica de tratamento de requisições  │   │   └── financeController.js  │   ├── routes/            # Definição das rotas da API  │   │   └── financeRoutes.js  │   ├── services/          # Lógica de negócio e interação com IA  │   │   └── financeService.js  │   └── uploads/           # Diretório para arquivos de upload (criado na inicialização)  ├── __tests__/             # Arquivos de testes unitários  │   ├── financeController.test.js  │   ├── financeRoutes.test.js  │   └── financeService.test.js  ├── test/                  # Arquivos auxiliares para testes (ex: fixtures)  │   └── fixtures/  │       └── fake_planilha.xlsx # Arquivo de planilha mockado  ├── .env                   # Arquivo de variáveis de ambiente (chave da API)  ├── .gitignore             # Arquivos/pastas a serem ignorados pelo Git  ├── jest.config.js         # Configuração do Jest  └── package.json           # Gerenciador de pacotes e scripts   `
+`
+.
+├── node_modules/          # Dependências instaladas
+├── public/                # Arquivos estáticos (frontend)
+│   ├── css/
+│   │   └── style.css      # Estilos CSS
+│   ├── js/
+│   │   ├── actions/       # Funções de chamada de API
+│   │   │   └── api.js
+│   │   └── model/         # Lógica de manipulação da UI
+│   │       └── UIManager.js
+│   │   └── script.js      # Lógica principal do frontend
+│   └── index.html         # Página principal da aplicação
+├── src/                   # Código fonte do backend
+│   ├── controllers/       # Lógica de tratamento de requisições
+│   │   └── financeController.js
+│   ├── routes/            # Definição das rotas da API
+│   │   └── financeRoutes.js
+│   ├── services/          # Lógica de negócio e interação com IA
+│   │   └── financeService.js
+│   └── uploads/           # Diretório para arquivos de upload (criado na inicialização)
+├── __tests__/             # Arquivos de testes unitários
+│   ├── financeController.test.js
+│   ├── financeRoutes.test.js
+│   └── financeService.test.js
+├── test/                  # Arquivos auxiliares para testes (ex: fixtures)
+│   └── fixtures/
+│       └── fake_planilha.xlsx # Arquivo de planilha mockado
+├── .env                   # Arquivo de variáveis de ambiente (chave da API)
+├── .gitignore             # Arquivos/pastas a serem ignorados pelo Git
+├── README.MD              # Documentação do projeto
+├── jest.config.js         # Configuração do Jest
+├── app.js                 # Script de inicialização da aplicação
+├── package.json           # Gerenciador de pacotes e scripts
+└── package-lock.json      # Arquivo package-lock
+`
 
 Testes 🧪
 ---------
@@ -156,7 +185,7 @@ Melhorias Futuras 💡
     
 *   Adicionar validações mais robustas no upload e processamento da planilha.
 
-*   Testes Unitários
+*   Conclusão dos Testes Unitários
     
 
 Contribuindo 👋

@@ -31,8 +31,7 @@ if (!fs.existsSync(uploadDir)) {
         fs.mkdirSync(uploadDir, { recursive: true });
     } catch (err) {
         console.error(`Erro ao criar o diretório de uploads em ${uploadDir}:`, err);
-        // Dependendo da severidade, você pode querer sair do processo
-        // process.exit(1);
+        process.exit(1);
     }
 }
 // --- Fim da verificação do diretório ---

@@ -5,6 +5,12 @@ Bem-vindo ao projeto Auxiliar de Finanças Pessoais! Este é um aplicativo web q
 
 * **Veja um video da interface e da execução do projeto** [LINK DO VIDEO AQUI](https://www.loom.com/share/c097c0fb1c194cb39bcec7867d642c6f?sid=3b57962a-795e-42e6-9079-89a9c627ff0b)
 
+Home Page & Chat 💻
+-----------------
+![Preview](assets/home.png)
+
+![Preview](assets/chat.png)
+
 Sobre o Projeto ✨
 -----------------
 

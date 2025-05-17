@@ -28,7 +28,6 @@ const storage = multer.diskStorage({
     const uploadPath = path.join(__dirname, '../uploads');
 
     // --- Verifica e cria a pasta de uploads se não existir ---
-    // Usa fs.mkdirSync com recursive: true para criar pastas aninhadas se necessário
     if (!fs.existsSync(uploadPath)) {
         try {
             fs.mkdirSync(uploadPath, { recursive: true });
@@ -46,7 +45,6 @@ const storage = multer.diskStorage({
     cb(null, uploadPath);
   },
   filename: function (req, file, cb) {
-    // Usa o nome original do arquivo
     const originalname = file.originalname;
     cb(null, originalname);
   }

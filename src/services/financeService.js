@@ -5,8 +5,6 @@ import XLSX from 'xlsx';
 import dotenv from 'dotenv';
 // Importa o SDK do Google Generative AI
 import { GoogleGenerativeAI } from '@google/generative-ai';
-// Importa dotenv para carregar variáveis de ambiente (já carregado em app.js, mas boa prática importar onde usado)
-// import 'dotenv/config'; // Pode ser usado se quiser carregar aqui também
 
 /**
  * Classe responsável pela lógica de negócio financeira e interação com a IA.
@@ -81,13 +79,12 @@ class FinanceService {
             console.error('Erro no serviço de finanças:', error);
             throw error; // Propaga o erro
         } finally {
-            // Opcional: Remover o arquivo após o processamento para não acumular arquivos
-            // try {
-            //     await fs.unlink(filePath);
-            //     console.log(`Arquivo temporário ${filePath} removido.`);
-            // } catch (unlinkError) {
-            //     console.error('Erro ao remover o arquivo temporário:', unlinkError);
-            // }
+            try {
+                await fs.unlink(filePath);
+                console.log(`Arquivo temporário ${filePath} removido.`);
+            } catch (unlinkError) {
+                console.error('Erro ao remover o arquivo temporário:', unlinkError);
+            }
         }
     }
 

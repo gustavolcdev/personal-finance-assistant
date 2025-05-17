@@ -93,23 +93,12 @@ Siga os passos abaixo para configurar e rodar o projeto em sua máquina:
     *   GOOGLE\_API\_KEY=SUA\_CHAVE\_DE\_API\_AQUI
         
         
-6.  **Crie um arquivo mockado para testes de rota:**
-    
-    *   Dentro da pasta test/fixtures, crie um arquivo de planilha pequeno (pode ser um .xlsx ou .csv simples com algumas linhas de dados) e nomeie-o como fake\_planilha.xlsx.
-        
-7.  **Configure o Jest:**
-    
-    *   // jest.config.jsexport default { testEnvironment: 'node', testMatch: \[ "\*\*/\_\_tests\_\_/\*\*/\*.test.js", "\*\*/?(\*.)+(test|spec).js" \], extensionsToTreatAsEsm: \['.js'\], testPathIgnorePatterns: \[ "/node\_modules/", \],};
-        
-8.  Configure o package.json para ES Modules e testes:
-    
-    *   { // ... outras configurações ... "main": "app.js", "type": "module", // ESSENCIAL para ES Modules "scripts": { "start": "node app.js", "test": "node --experimental-vm-modules node\_modules/jest/bin/jest.js" // Script para rodar testes com ES Modules }, // ... dependências e devDependencies ...}
-        
-
 Executando o Projeto ▶️
 -----------------------
 
-1.  npm startO servidor deverá iniciar e informar em qual porta está rodando (geralmente http://localhost:3000).
+1.  O servidor deverá iniciar e informar em qual porta está rodando (geralmente http://localhost:3000).
+
+    * Execute o comando npm start  para iniciar o servidor 
     
 2.  **Acesse a aplicação no navegador:**
     
@@ -134,13 +123,12 @@ Estrutura do Projeto 📁
 -----------------------
 
 A estrutura de pastas do projeto segue uma organização modular:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── node_modules/          # Dependências instaladas  ├── public/                # Arquivos estáticos (frontend)  │   ├── css/  │   │   └── style.css      # Estilos CSS  │   ├── js/  │   │   ├── actions/       # Funções de chamada de API  │   │   │   └── api.js  │   │   └── model/         # Lógica de manipulação da UI  │   │       └── UIManager.js  │   │   └── script.js      # Lógica principal do frontend  │   └── index.html         # Página principal da aplicação  ├── src/                   # Código fonte do backend  │   ├── controllers/       # Lógica de tratamento de requisições  │   │   └── financeController.js  │   ├── routes/            # Definição das rotas da API  │   │   └── financeRoutes.js  │   ├── services/          # Lógica de negócio e interação com IA  │   │   └── financeService.js  │   └── uploads/           # Diretório para arquivos de upload (criado na inicialização)  ├── __tests__/             # Arquivos de testes unitários  │   ├── financeController.test.js  │   ├── financeRoutes.test.js  │   └── financeService.test.js  ├── test/                  # Arquivos auxiliares para testes (ex: fixtures)  │   └── fixtures/  │       └── fake_planilha.xlsx # Arquivo de planilha mockado  ├── .env                   # Arquivo de variáveis de ambiente (chave da API)  ├── .gitignore             # Arquivos/pastas a serem ignorados pelo Git  ├── jest.config.js         # Configuração do Jest  └── package.json           # Gerenciador de pacotes e scripts   `
+`   .  ├── node_modules/          # Dependências instaladas  ├── public/                # Arquivos estáticos (frontend)  │   ├── css/  │   │   └── style.css      # Estilos CSS  │   ├── js/  │   │   ├── actions/       # Funções de chamada de API  │   │   │   └── api.js  │   │   └── model/         # Lógica de manipulação da UI  │   │       └── UIManager.js  │   │   └── script.js      # Lógica principal do frontend  │   └── index.html         # Página principal da aplicação  ├── src/                   # Código fonte do backend  │   ├── controllers/       # Lógica de tratamento de requisições  │   │   └── financeController.js  │   ├── routes/            # Definição das rotas da API  │   │   └── financeRoutes.js  │   ├── services/          # Lógica de negócio e interação com IA  │   │   └── financeService.js  │   └── uploads/           # Diretório para arquivos de upload (criado na inicialização)  ├── __tests__/             # Arquivos de testes unitários  │   ├── financeController.test.js  │   ├── financeRoutes.test.js  │   └── financeService.test.js  ├── test/                  # Arquivos auxiliares para testes (ex: fixtures)  │   └── fixtures/  │       └── fake_planilha.xlsx # Arquivo de planilha mockado  ├── .env                   # Arquivo de variáveis de ambiente (chave da API)  ├── .gitignore             # Arquivos/pastas a serem ignorados pelo Git  ├── jest.config.js         # Configuração do Jest  └── package.json           # Gerenciador de pacotes e scripts   `
 
 Testes 🧪
 ---------
 
-TODO
+* TODO
 
 Melhorias Futuras 💡
 --------------------
